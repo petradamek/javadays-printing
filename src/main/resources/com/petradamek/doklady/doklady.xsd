@@ -1,0 +1,64 @@
+<xsd:schema targetNamespace="http://www.bilysklep.cz/doklady"
+            elementFormDefault="qualified"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:tns="http://www.bilysklep.cz/doklady">
+
+    <xsd:element name="doklady" type="tns:DokladyType"/>
+
+    <xsd:complexType name="DokladyType">
+        <xsd:choice minOccurs="1" maxOccurs="unbounded">
+            <xsd:element name="prijmovyPokladniDoklad" type="tns:PrijmovyPokladniDokladType"/>
+            <xsd:element name="vydajovyPokladniDoklad" type="tns:VydajovyPokladniDokladType"/>
+        </xsd:choice>
+    </xsd:complexType>
+
+    <xsd:complexType name="PrijmovyPokladniDokladType">
+        <xsd:complexContent>
+            <xsd:extension base="tns:PokladniDokladType"/>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="VydajovyPokladniDokladType">
+        <xsd:complexContent>
+            <xsd:extension base="tns:PokladniDokladType"/>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="PokladniDokladType">
+        <xsd:sequence>
+            <xsd:element name="cislo" type="xsd:string"/>
+            <xsd:element name="datum" type="xsd:date"/>
+            <xsd:element name="dokladVystavil" type="tns:SubjectType"/>
+            <xsd:element name="druhaStrana" type="tns:SubjectType"/>
+            <xsd:element name="cena" type="tns:CenaType"/>
+            <xsd:element name="ucel" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="SubjectType">
+        <xsd:sequence>
+            <xsd:element name="jmeno" type="xsd:string"/>
+            <xsd:element name="adresa" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="ic" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="dic" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="CenaType">
+        <xsd:sequence>
+            <xsd:element name="bezDph" type="xsd:decimal" minOccurs="0"/>
+            <xsd:element name="dphSazba" type="xsd:decimal" minOccurs="0"/>
+            <xsd:element name="dph" type="xsd:decimal" minOccurs="0"/>
+            <xsd:element name="vcetneDph" type="xsd:decimal"/>
+            <xsd:element name="mena" type="tns:MenaType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="MenaType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="CZK"/>
+            <xsd:enumeration value="EUR"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>

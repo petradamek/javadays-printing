@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!--DOCTYPE fop [
+<!ENTITY fop.home "jar:///c:/fop-0.93/">
+<!ENTITY fonts.dir "file:///c:/windows/fonts">
+]-->
+
+<fop version="1.0">
+
+    <renderers>
+        <renderer mime="application/pdf">
+
+            <fonts>
+
+                <auto-detect/>
+
+                <!--font metrics-url="metrics/times.xml" kerning="yes" embed-url="times.ttf">
+                      <font-triplet name="TimesNewRoman" style="normal" weight="normal"/>
+                      <font-triplet name="serif" style="normal" weight="normal"/>
+                    </font>
+                    <font metrics-url="metrics/timesi.xml" kerning="yes" embed-url="timesi.ttf">
+                      <font-triplet name="TimesNewRoman" style="italic" weight="normal"/>
+                      <font-triplet name="serif" style="italic" weight="normal"/>
+                    </font>
+                    <font metrics-url="metrics/timesbi.xml" kerning="yes" embed-url="timesbi.ttf">
+                      <font-triplet name="TimesNewRoman" style="italic" weight="bold"/>
+                      <font-triplet name="serif" style="italic" weight="bold"/>
+                    </font>
+                    <font metrics-url="metrics/timesbd.xml" kerning="yes" embed-url="timesbd.ttf">
+                      <font-triplet name="TimesNewRoman" style="normal" weight="bold"/>
+                      <font-triplet name="serif" style="normal" weight="bold"/>
+                    </font>
+
+                    <font metrics-url="metrics/arial.xml" kerning="yes" embed-url="arial.ttf">
+                      <font-triplet name="Arial" style="normal" weight="normal"/>
+                      <font-triplet name="sans-serif" style="normal" weight="normal"/>
+                    </font>
+                    <font metrics-url="metrics/ariali.xml" kerning="yes" embed-url="ariali.ttf">
+                      <font-triplet name="Arial" style="italic" weight="normal"/>
+                      <font-triplet name="sans-serif" style="italic" weight="normal"/>
+                    </font>
+                    <font metrics-url="metrics/arialbi.xml" kerning="yes" embed-url="arialbi.ttf">
+                      <font-triplet name="Arial" style="italic" weight="bold"/>
+                      <font-triplet name="sans-serif" style="italic" weight="bold"/>
+                    </font>
+                    <font metrics-url="metrics/arialbd.xml" kerning="yes" embed-url="arialbd.ttf">
+                      <font-triplet name="Arial" style="normal" weight="bold"/>
+                      <font-triplet name="sans-serif" style="normal" weight="bold"/>
+                    </font>
+
+                    <font metrics-url="metrics/cour.xml" kerning="yes" embed-url="cour.ttf">
+                      <font-triplet name="CourierNew" style="normal" weight="normal"/>
+                      <font-triplet name="monospace" style="normal" weight="normal"/>
+                    </font>
+                    <font metrics-url="metrics/couri.xml" kerning="yes" embed-url="couri.ttf">
+                      <font-triplet name="CourierNew" style="italic" weight="normal"/>
+                      <font-triplet name="monospace" style="italic" weight="normal"/>
+                    </font>
+                    <font metrics-url="metrics/courbi.xml" kerning="yes" embed-url="courbi.ttf">
+                      <font-triplet name="CourierNew" style="italic" weight="bold"/>
+                      <font-triplet name="monospace" style="italic" weight="bold"/>
+                    </font>
+                    <font metrics-url="metrics/courbd.xml" kerning="yes" embed-url="courbd.ttf">
+                      <font-triplet name="CourierNew" style="normal" weight="bold"/>
+                      <font-triplet name="monospace" style="normal" weight="bold"/>
+                    </font-->
+
+            </fonts>
+        </renderer>
+
+    </renderers>
+
+</fop>

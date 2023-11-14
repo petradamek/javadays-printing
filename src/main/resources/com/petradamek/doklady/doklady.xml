@@ -1,0 +1,48 @@
+<doklady xmlns="http://www.bilysklep.cz/doklady">
+    <vydajovyPokladniDoklad>
+        <cislo>P-0006/2023</cislo>
+        <datum>2023-03-15</datum>
+        <dokladVystavil>
+            <jmeno>Petr Adámek Consulting, s.r.o.</jmeno>
+            <adresa>č.p. 254, 669 02 Chvalovice</adresa>
+            <ic>07879024</ic>
+            <dic>CZ07879024</dic>
+        </dokladVystavil>
+        <druhaStrana>
+            <jmeno>Ing. Petr Adámek</jmeno>
+            <adresa>č.p. 254, 669 02 Chvalovice</adresa>
+        </druhaStrana>
+        <cena>
+            <vcetneDph>5971</vcetneDph>
+            <mena>CZK</mena>
+        </cena>
+        <ucel>Odměna z dohody o práci konané mimo pracovní poměr za únor 2023</ucel>
+    </vydajovyPokladniDoklad>
+
+    <prijmovyPokladniDoklad>
+        <cislo>P+0008/2023</cislo>
+        <datum>2023-12-12</datum>
+        <dokladVystavil>
+            <jmeno>Petr Adámek Consulting, s.r.o.</jmeno>
+            <adresa>č.p. 254, 669 02 Chvalovice</adresa>
+            <ic>07879024</ic>
+            <dic>CZ07879024</dic>
+        </dokladVystavil>
+        <druhaStrana>
+            <jmeno>Jan Kvasnička</jmeno>
+            <adresa>č.p. 12, 669 02 Chvalovice</adresa>
+            <ic>13434322</ic>
+            <dic>CZ7212122345</dic>
+        </druhaStrana>
+        <cena>
+            <bezDph>100</bezDph>
+            <dphSazba>21</dphSazba>
+            <dph>21</dph>
+            <vcetneDph>121</vcetneDph>
+            <mena>CZK</mena>
+        </cena>
+        <ucel>
+            Úhrada faktury č. 28
+        </ucel>
+    </prijmovyPokladniDoklad>
+</doklady>
